@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="fogGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#E2E8F0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#64748B" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#9B2226" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Solid Dark Slate Canvas -->
+  <rect width="600" height="400" fill="url(#bgGrad)" />
+  <!-- Grid pattern overlay for high-tech look -->
+  <rect width="600" height="400" fill="url(#grid)" />
+
+  <!-- Abstract target/safety circles in the background -->
+  <circle cx="300" cy="200" r="160" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="8 8" />
+  <circle cx="300" cy="200" r="120" fill="none" stroke="#E9C46A" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Shield Shape Backdrop -->
+  <path d="M 300,50 L 420,100 V 220 C 420,300 300,360 300,360 C 300,360 180,300 180,220 V 100 Z" fill="#1E293B" fill-opacity="0.6" stroke="#475569" stroke-width="2" />
+
+  <!-- ==================== FOGGER MACHINE ILLUSTRATION ==================== -->
+  <g transform="translate(130, 160)">
+    <!-- Gas Tank / Canister -->
+    <rect x="0" y="30" width="100" height="70" rx="15" fill="url(#brandGrad)" stroke="#F87171" stroke-width="2" />
+    <rect x="15" y="20" width="20" height="10" fill="#E2E8F0" />
+    <ellipse cx="25" cy="20" rx="10" ry="4" fill="#64748B" />
+    <!-- Pressure gauge -->
+    <circle cx="75" cy="65" r="15" fill="#FFFFFF" stroke="#475569" stroke-width="2" />
+    <line x1="75" y1="65" x2="82" y2="58" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 67 65 A 8 8 0 0 1 83 65" fill="none" stroke="#10B981" stroke-width="1.5" />
+
+    <!-- Machine Engine Body / Carburator -->
+    <rect x="90" y="45" width="80" height="50" rx="8" fill="url(#metalGrad)" stroke="#1E293B" stroke-width="2" />
+    <!-- Intake grill lines -->
+    <line x1="100" y1="55" x2="100" y2="85" stroke="#1E293B" stroke-width="2" />
+    <line x1="110" y1="55" x2="110" y2="85" stroke="#1E293B" stroke-width="2" />
+    <line x1="120" y1="55" x2="120" y2="85" stroke="#1E293B" stroke-width="2" />
+
+    <!-- Chrome Fogger Nozzle (Long barrel) -->
+    <path d="M 170,60 L 290,60 L 290,75 L 170,75 Z" fill="url(#metalGrad)" stroke="#334155" stroke-width="1.5" />
+    <!-- Nozzle Tip -->
+    <path d="M 290,56 L 310,63 L 310,72 L 290,79 Z" fill="#334155" />
+    
+    <!-- Heavy Duty Handle -->
+    <path d="M 20,30 L 20,5 Q 50,0 80,5 L 80,30" fill="none" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round" />
+    <path d="M 35,5 L 65,5" fill="none" stroke="#1E293B" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Fuel cap/details -->
+    <rect x="140" y="38" width="15" height="7" fill="#E9C46A" rx="2" />
+  </g>
+
+  <!-- ==================== SPRAY / FOG EFFECT ==================== -->
+  <!-- We place fog/mist clouds emerging from the nozzle tip at (440, 225) -->
+  <g transform="translate(440, 220)">
+    <!-- Expanding billowy clouds of fog with gradients -->
+    <path d="M 0,-4 Q 40,-30 80,-20 Q 120,-40 160,-10 Q 190,-25 210,10 Q 190,45 160,30 Q 120,50 80,30 Q 40,30 0,4 Z" fill="url(#fogGrad)" />
+    <!-- Layer 2 for depth -->
+    <path d="M 10,-2 Q 50,-15 90,-8 Q 130,-25 150,-2 Q 170,15 140,22 Q 110,35 70,20 Q 40,15 10,2 Z" fill="#FFFFFF" fill-opacity="0.4" />
+    <!-- Particle dots -->
+    <circle cx="45" cy="-25" r="5" fill="#FFFFFF" opacity="0.6" />
+    <circle cx="85" cy="35" r="7" fill="#FFFFFF" opacity="0.4" />
+    <circle cx="125" cy="-35" r="9" fill="#FFFFFF" opacity="0.5" />
+    <circle cx="165" cy="25" r="6" fill="#FFFFFF" opacity="0.3" />
+    <circle cx="195" cy="-10" r="4" fill="#FFFFFF" opacity="0.5" />
+  </g>
+
+  <!-- ==================== TARGET / BANNED MOSQUITO ==================== -->
+  <!-- Positioned in the fog zone (approx 480, 160) to show eradication -->
+  <g transform="translate(480, 150) scale(0.85)">
+    <!-- Mosquito Drawing -->
+    <!-- Wings -->
+    <ellipse cx="0" cy="-15" rx="8" ry="18" fill="#E2E8F0" fill-opacity="0.7" transform="rotate(-30)" />
+    <ellipse cx="12" cy="-15" rx="8" ry="18" fill="#E2E8F0" fill-opacity="0.7" transform="rotate(30)" />
+    <!-- Body -->
+    <ellipse cx="6" cy="0" rx="5" ry="14" fill="#334155" />
+    <!-- Head -->
+    <circle cx="6" cy="-16" r="4" fill="#1E293B" />
+    <!-- Proboscis (needle) -->
+    <line x1="6" y1="-20" x2="6" y2="-28" stroke="#1E293B" stroke-width="1.5" />
+    <!-- Legs -->
+    <path d="M -2,-4 Q -10,-8 -15,0" fill="none" stroke="#1E293B" stroke-width="1.5" />
+    <path d="M 14,-4 Q 22,-8 27,0" fill="none" stroke="#1E293B" stroke-width="1.5" />
+    <path d="M -2,4 Q -12,10 -14,20" fill="none" stroke="#1E293B" stroke-width="1.5" />
+    <path d="M 14,4 Q 24,10 26,20" fill="none" stroke="#1E293B" stroke-width="1.5" />
+
+    <!-- NO/Prohibition Red Circle with Slash -->
+    <circle cx="6" cy="0" r="28" fill="none" stroke="#EF4444" stroke-width="6" />
+    <line x1="-14" y1="-14" x2="26" y2="14" stroke="#EF4444" stroke-width="6" />
+  </g>
+
+  <!-- ==================== BADGES & TEXTS ==================== -->
+  <!-- Verified Safe Badge -->
+  <g transform="translate(30, 30)">
+    <rect width="170" height="32" rx="16" fill="#1E293B" stroke="#E9C46A" stroke-width="1.5" />
+    <circle cx="20" cy="16" r="8" fill="#10B981" />
+    <!-- Small checkmark inside green circle -->
+    <path d="M 17 16 L 19 18 L 23 14" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <text x="36" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#E2E8F0" letter-spacing="0.5">OUTDOOR SHIELDED</text>
+  </g>
+  
+  <g transform="translate(430, 30)">
+    <rect width="140" height="32" rx="16" fill="#9B2226" />
+    <text x="70" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="black" fill="#FFFFFF" letter-spacing="1" text-anchor="middle">ACTIVE FOGGING</text>
+  </g>
+</svg>
