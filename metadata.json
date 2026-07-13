@@ -1,0 +1,6 @@
+{
+  "name": "SecureNest Pest Control",
+  "description": "SecureNest Pest Control offers safe cockroach, termite, mosquito and rodent control in Rajapur, Ratnagiri and Vijaydurg. Book a free inspection today.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

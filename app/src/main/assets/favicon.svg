@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background squircle for outstanding visibility across both light and dark browser themes -->
+  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+  
+  <!-- Rich Crimson Protective Shield -->
+  <path d="M256 60 L410 130 V260 C410 375 256 455 256 455 C256 455 102 375 102 260 V130 Z" fill="#9B2226" stroke="#E9C46A" stroke-width="18" stroke-linejoin="round"/>
+  
+  <!-- House / Nest Safety Outline -->
+  <path d="M256 160 L335 225 V325 H177 V225 Z" fill="none" stroke="#E9C46A" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  
+  <!-- Roof Highlight -->
+  <path d="M256 160 L345 233" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <path d="M256 160 L167 233" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Center Security Checkmark representing active defense -->
+  <path d="M215 265 L245 295 L297 225" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- SEO DETAILS -->
+    <title>SecureNest Pest Control | Pest Control Service in Rajapur</title>
+    <meta name="description" content="SecureNest Pest Control offers safe cockroach, termite, mosquito and rodent control in Rajapur, Ratnagiri and Vijaydurg. Book a free inspection today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#9B2226', /* Deep rich protective crimson */
+                        accent: '#E9C46A',  /* Premium gold */
+                        dark: '#0F172A',    /* Elegant dark blue-gray */
+                        muted: '#475569',   /* Safe slate gray */
+                        slate: '#F8FAFC',   /* Light background */
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Scrollytelling & Visual Polish -->
+    <style>
+        :root {
+            --primary: #9B2226;
+            --accent: #E9C46A;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Scrollytelling Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero Scroll Trigger Reveal elements */
+        .hero-reveal {
+            opacity: 0;
+            transform: scale(0.95) translateY(20px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .hero-reveal.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        /* Nav link custom underline transition */
+        .nav-underline {
+            position: relative;
+        }
+        .nav-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .nav-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Floating WhatsApp Pulse */
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        .whatsapp-pulse {
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        /* Button hover animations */
+        .btn-hover-effect {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(155, 34, 38, 0.2);
+        }
+        .btn-accent-hover:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(233, 196, 106, 0.3);
+        }
+
+        /* Timeline layout */
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary) 20%, #E9C46A 60%, var(--primary) 100%);
+        }
+
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 20px;
+                transform: none;
+            }
+        }
+    </style>
+
+    <!-- LocalBusiness JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SecureNest Pest Control",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
+      "@id": "https://securenestpest.com",
+      "url": "https://securenestpest.com",
+      "telephone": "+919527586194",
+      "priceRange": "INR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop No. 7, Anand Complex, Rajapur",
+        "addressLocality": "Rajapur",
+        "addressRegion": "Maharashtra",
+        "postalCode": "416702",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 16.6601,
+        "longitude": 73.5165
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Rajapur"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ratnagiri"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Vijaydurg"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="antialiased text-dark">
+
+    <!-- 1. Header Section -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center space-x-2.5 group">
+                <div class="w-11 h-11 bg-primary rounded-xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105 duration-300 border border-primary/20">
+                    <i class="fa-solid fa-house-shield text-2xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black tracking-tight text-primary leading-none">SecureNest</span>
+                    <span class="text-[10px] font-black tracking-widest text-dark leading-none uppercase mt-1">PEST CONTROL</span>
+                </div>
+            </a>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#home" class="text-dark hover:text-primary transition-colors nav-underline">Home</a>
+                <a href="#services" class="text-dark hover:text-primary transition-colors nav-underline">Services</a>
+                <a href="#why-choose-us" class="text-dark hover:text-primary transition-colors nav-underline">About Us</a>
+                <a href="#pricing" class="text-dark hover:text-primary transition-colors nav-underline">Pricing</a>
+                <a href="#gallery" class="text-dark hover:text-primary transition-colors nav-underline">Gallery</a>
+                <a href="#faq" class="text-dark hover:text-primary transition-colors nav-underline">FAQ</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors nav-underline">Contact</a>
+            </nav>
+
+            <!-- Header Action CTA -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="tel:9527586194" class="flex items-center space-x-2 text-primary font-bold hover:text-red-800 transition-colors">
+                    <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                    <span>+91 95275 86194</span>
+                </a>
+                <a href="#contact" class="bg-primary text-white font-bold py-2.5 px-5 rounded-full text-sm uppercase tracking-wide btn-hover-effect">
+                    Free Inspection
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-drawer" class="hidden md:hidden fixed inset-0 top-[72px] bg-white z-40 px-6 py-8 border-t border-slate-100 flex flex-col justify-between overflow-y-auto">
+            <div class="flex flex-col space-y-5 text-lg font-bold">
+                <a href="#home" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>Home</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+                <a href="#services" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>Services</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+                <a href="#why-choose-us" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>About Us</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+                <a href="#pricing" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>Pricing</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+                <a href="#gallery" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>Gallery</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+                <a href="#faq" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>FAQ</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+                <a href="#contact" class="mobile-nav-link text-dark hover:text-primary transition-colors flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span>Contact</span> <i class="fa-solid fa-chevron-right text-sm text-slate-300"></i>
+                </a>
+            </div>
+            <div class="flex flex-col space-y-3 mt-8 pb-12">
+                <a href="tel:9527586194" class="flex items-center justify-center space-x-2 text-primary font-bold text-lg bg-slate-100 py-3 rounded-xl hover:bg-slate-200 transition-colors">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call +91 95275 86194</span>
+                </a>
+                <a href="#contact" class="bg-primary text-white font-bold py-4 rounded-xl text-center uppercase tracking-wider mobile-nav-link">
+                    Book Free Inspection
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section (Story Scroll) -->
+    <section id="home" class="relative min-h-screen pt-28 pb-16 flex items-center bg-gradient-to-br from-neutral-900 via-neutral-950 to-red-950 text-white overflow-hidden">
+        <!-- Background Overlay / Shield Mask -->
+        <div class="absolute inset-0 opacity-15 pointer-events-none">
+            <svg class="absolute right-0 bottom-0 w-2/3 h-full text-primary" viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none">
+                <path d="M0,100 C30,100 70,80 100,50 L100,0 L0,0 Z"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Area (revealed dynamically) -->
+                <div class="lg:col-span-7 flex flex-col justify-center space-y-6">
+                    <div class="hero-reveal inline-flex items-center space-x-2 bg-primary/20 border border-primary/40 rounded-full px-4 py-1.5 text-accent text-sm font-semibold max-w-max">
+                        <i class="fa-solid fa-circle-check animate-pulse"></i>
+                        <span>7 Years of Professional Pest Protection</span>
+                    </div>
+
+                    <h1 class="hero-reveal text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-white">
+                        Guarding Every Corner<br>
+                        <span class="text-accent underline decoration-primary decoration-4 underline-offset-8">Of Your Nest.</span><br>
+                        No Bugs. Guaranteed.
+                    </h1>
+
+                    <p class="hero-reveal text-base sm:text-lg text-slate-300 max-w-xl font-light">
+                        SecureNest Pest Control provides professional, odorless, and government-approved pest control treatments across <strong class="text-white">Rajapur, Ratnagiri, and Vijaydurg</strong>. Shielding over 450+ happy homes with precision.
+                    </p>
+
+                    <div class="hero-reveal flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                        <a href="#contact" class="bg-primary text-white text-center font-bold py-4 px-8 rounded-full shadow-lg btn-hover-effect uppercase tracking-wide flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Get Free Inspection</span>
+                        </a>
+                        <a href="tel:9527586194" class="bg-transparent border border-white/30 hover:border-white/80 hover:bg-white/5 text-white text-center font-bold py-4 px-8 rounded-full shadow transition-all duration-300 flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-phone text-accent"></i>
+                            <span>Call 9527586194</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators inside Hero -->
+                    <div class="hero-reveal pt-8 flex flex-wrap gap-6 text-sm text-slate-400 border-t border-white/10 mt-6">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-shield-virus text-primary text-xl"></i>
+                            <span>Child & Pet Safe chemicals</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-house-circle-check text-accent text-xl"></i>
+                            <span>450+ Happy Customers Served</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic/Visual Area -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="hero-reveal relative w-full max-w-md sm:max-w-lg">
+                        <!-- Custom decorative glow -->
+                        <div class="absolute -inset-4 bg-primary/25 rounded-full blur-3xl opacity-50"></div>
+                        
+                        <!-- Main Shield Graphic Structure -->
+                        <div class="relative bg-neutral-900 border-4 border-accent rounded-3xl p-8 shadow-2xl flex flex-col justify-between overflow-hidden">
+                            <div class="absolute -right-16 -top-16 w-32 h-32 bg-primary/30 rounded-full blur-xl"></div>
+                            
+                            <!-- Inside of the shield preview -->
+                            <div class="flex items-center justify-between mb-8">
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Shield Status: Deployed</span>
+                                <span class="flex h-3 w-3 relative">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                </span>
+                            </div>
+
+                            <div class="text-center py-6">
+                                <div class="relative inline-block mb-6">
+                                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400" alt="Technician spraying pest control" class="w-32 h-32 object-cover rounded-full border-4 border-accent mx-auto shadow-lg">
+                                    <span class="absolute bottom-0 right-1/2 translate-x-1/2 bg-primary text-white text-xs px-2 py-0.5 rounded-full font-bold">Verified</span>
+                                </div>
+                                <h3 class="text-2xl font-black mb-2 text-white">SECURENEST PROTECTION</h3>
+                                <p class="text-xs text-slate-400 max-w-xs mx-auto">Providing advanced odorless treatments, pre/post construction barriers, and targeted general pest defenses.</p>
+                            </div>
+
+                            <!-- Form Shortcut or Immediate Lead Capture -->
+                            <div class="mt-8 bg-black/40 border border-white/10 p-4 rounded-xl flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2.5 h-2.5 bg-accent rounded-full"></div>
+                                    <div class="flex flex-col text-left">
+                                        <span class="text-xs text-slate-400">Quick Contact</span>
+                                        <span class="text-sm font-bold text-white">Direct on WhatsApp</span>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/9527586194?text=Hi,%20I%20need%20pest%20control%20service%20for%20[locality]" target="_blank" class="text-xs text-accent font-bold hover:underline flex items-center space-x-1">
+                                    <span>Chat Now</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Stats/Trust Bar Section -->
+    <section class="bg-primary py-8 text-white relative z-20 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
+                
+                <!-- Stat 1 -->
+                <div class="flex flex-col items-center justify-center p-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-calendar-days text-accent text-xl"></i>
+                    </div>
+                    <span class="text-3xl font-black tracking-tight text-white mb-1">7 Years</span>
+                    <span class="text-xs uppercase tracking-widest text-slate-300 font-semibold">Experience</span>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="flex flex-col items-center justify-center p-4 pt-8 md:pt-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-house-circle-check text-accent text-xl"></i>
+                    </div>
+                    <span class="text-3xl font-black tracking-tight text-white mb-1">450+</span>
+                    <span class="text-xs uppercase tracking-widest text-slate-300 font-semibold">Customers Served</span>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="flex flex-col items-center justify-center p-4 pt-8 md:pt-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-award text-accent text-xl"></i>
+                    </div>
+                    <span class="text-3xl font-black tracking-tight text-white mb-1">Eco-Safe</span>
+                    <span class="text-xs uppercase tracking-widest text-slate-300 font-semibold">Chemicals Only</span>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="flex flex-col items-center justify-center p-4 pt-8 md:pt-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-map-location-dot text-accent text-xl"></i>
+                    </div>
+                    <span class="text-3xl font-black tracking-tight text-white mb-1">Local</span>
+                    <span class="text-xs uppercase tracking-widest text-slate-300 font-semibold">Rajapur, Ratnagiri, Vijaydurg</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section (Vertical Process/Timeline Layout) -->
+    <section id="services" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Service Programs</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Professional Pest Defense</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+                <p class="text-slate-600 font-light text-base sm:text-lg">
+                    We approach pest management with target-specific methodologies, safe chemical compositions, and strict service warranties.
+                </p>
+            </div>
+
+            <!-- Vertical timeline block -->
+            <div class="relative">
+                <!-- Center timeline line -->
+                <div class="timeline-line"></div>
+
+                <!-- Service Node 1 (Cockroach Control) -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24 reveal">
+                    <!-- Left Column -->
+                    <div class="md:text-right md:pr-12 md:order-1 order-2">
+                        <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary mb-4">
+                            <span class="font-extrabold text-lg">01</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3 text-dark">Cockroach Control</h3>
+                        <p class="text-slate-600 font-light mb-6">
+                            Advanced gel-based odorless treatment. Perfect and highly safe for kitchens, cabinets, and appliances. Highly effective with zero impact on your cooking spaces or air quality.
+                        </p>
+                        <a href="#contact" onclick="selectService('Cockroach Control')" class="inline-flex items-center space-x-2 text-primary font-bold hover:text-accent transition-colors">
+                            <span>Request Odorless Treatment</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!-- Right Column (Image/Decoration) -->
+                    <div class="md:pl-12 md:order-2 order-1 flex justify-center">
+                        <div class="relative group max-w-md">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+                            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&q=80&w=600" alt="Kitchen Cockroach Control" class="relative rounded-2xl shadow-xl w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Node 2 (Termite Control) -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24 reveal">
+                    <!-- Left Column (Image) -->
+                    <div class="md:pr-12 flex justify-center">
+                        <div class="relative group max-w-md">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-accent to-primary rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600" alt="Termite Treatment Barrier" class="relative rounded-2xl shadow-xl w-full h-64 object-cover">
+                        </div>
+                    </div>
+                    <!-- Right Column (Content) -->
+                    <div class="md:pl-12">
+                        <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary mb-4">
+                            <span class="font-extrabold text-lg">02</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3 text-dark">Termite Control</h3>
+                        <p class="text-slate-600 font-light mb-6">
+                            Comprehensive pre-construction and post-construction chemical soil barriers. Protects your wood-works and structure foundations. Comes with complete warranty assurance.
+                        </p>
+                        <a href="#contact" onclick="selectService('Termite Control')" class="inline-flex items-center space-x-2 text-primary font-bold hover:text-accent transition-colors">
+                            <span>Request Termite Shield</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Node 3 (Mosquito Control) -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24 reveal">
+                    <!-- Left Column -->
+                    <div class="md:text-right md:pr-12 md:order-1 order-2">
+                        <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary mb-4">
+                            <span class="font-extrabold text-lg">03</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3 text-dark">Mosquito Control</h3>
+                        <p class="text-slate-600 font-light mb-6">
+                            Double-action protection using thermal fogging combined with targeted residual sprays. Dissects mosquito breeding vectors for durable and safe outdoor patio and indoor protection.
+                        </p>
+                        <a href="#contact" onclick="selectService('Mosquito Control')" class="inline-flex items-center space-x-2 text-primary font-bold hover:text-accent transition-colors">
+                            <span>Get Misting Barrier</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!-- Right Column (Image/Decoration) -->
+                    <div class="md:pl-12 md:order-2 order-1 flex justify-center">
+                        <div class="relative group max-w-md">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+                            <img src="https://images.unsplash.com/photo-1595273670150-db0c3c39241f?auto=format&fit=crop&q=80&w=600" alt="Mosquito fogging sprayer" class="relative rounded-2xl shadow-xl w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Node 4 (Rodent Control) -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24 reveal">
+                    <!-- Left Column (Image) -->
+                    <div class="md:pr-12 flex justify-center">
+                        <div class="relative group max-w-md">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-accent to-primary rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600" alt="Rodent Proofing Services" class="relative rounded-2xl shadow-xl w-full h-64 object-cover">
+                        </div>
+                    </div>
+                    <!-- Right Column (Content) -->
+                    <div class="md:pl-12">
+                        <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary mb-4">
+                            <span class="font-extrabold text-lg">04</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3 text-dark">Rodent Control</h3>
+                        <p class="text-slate-600 font-light mb-6">
+                            Safe mechanical trap placement paired with robust physical rodent-proofing barriers. Designed to fully seal, clear, and secure houses, godowns, kitchens, and commercial shops.
+                        </p>
+                        <a href="#contact" onclick="selectService('Rodent Control')" class="inline-flex items-center space-x-2 text-primary font-bold hover:text-accent transition-colors">
+                            <span>Get Rodent Proofing</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Node 5 (Bed Bug Treatment) -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24 reveal">
+                    <!-- Left Column -->
+                    <div class="md:text-right md:pr-12 md:order-1 order-2">
+                        <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary mb-4">
+                            <span class="font-extrabold text-lg">05</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3 text-dark">Bed Bug Treatment</h3>
+                        <p class="text-slate-600 font-light mb-6">
+                            Lethal heat-steam exposure combined with localized safe chemical micro-treatments. Eliminates bed bugs across all lifecycle stages (eggs, larvae, adults) in mattresses and furniture.
+                        </p>
+                        <a href="#contact" onclick="selectService('Bed Bug Treatment')" class="inline-flex items-center space-x-2 text-primary font-bold hover:text-accent transition-colors">
+                            <span>Eradicate Bed Bugs</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!-- Right Column (Image/Decoration) -->
+                    <div class="md:pl-12 md:order-2 order-1 flex justify-center">
+                        <div class="relative group max-w-md">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Bed Bug spray sanitation" class="relative rounded-2xl shadow-xl w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Node 6 (General AMC) -->
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center reveal">
+                    <!-- Left Column (Image) -->
+                    <div class="md:pr-12 flex justify-center">
+                        <div class="relative group max-w-md">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-accent to-primary rounded-2xl blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" alt="General AMC Pest Control" class="relative rounded-2xl shadow-xl w-full h-64 object-cover">
+                        </div>
+                    </div>
+                    <!-- Right Column (Content) -->
+                    <div class="md:pl-12">
+                        <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary mb-4">
+                            <span class="font-extrabold text-lg">06</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-3 text-dark">General Pest Control (AMC)</h3>
+                        <p class="text-slate-600 font-light mb-6">
+                            Year-round hassle-free protection with our Annual Maintenance Contract. Includes scheduled quarterly visits, proactive checkups, and free emergency bookings whenever you spot an insect.
+                        </p>
+                        <a href="#contact" onclick="selectService('General Pest Control (AMC)')" class="inline-flex items-center space-x-2 text-primary font-bold hover:text-accent transition-colors">
+                            <span>Request Annual Plan</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. Why Choose Us Section -->
+    <section id="why-choose-us" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Defensive Merit</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Why SecureNest is Trusted</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+                <p class="text-slate-600 font-light text-base sm:text-lg">
+                    With over 7 years of operational excellence, we serve our community with standard eco-safe formulations and 100% guarantee.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Graphic Left -->
+                <div class="lg:col-span-5 flex justify-center reveal">
+                    <div class="relative group max-w-md">
+                        <div class="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-white border border-slate-200 rounded-3xl p-4 shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" alt="Technician with equipment" class="rounded-2xl w-full h-[400px] object-cover">
+                            <div class="absolute bottom-8 left-8 right-8 bg-primary/95 backdrop-blur text-white p-4 rounded-xl text-center shadow-lg">
+                                <span class="text-xs uppercase font-bold tracking-widest text-accent">Authorized Team</span>
+                                <h4 class="font-extrabold text-lg mt-1">Professional & Certified</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Right -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
+                    
+                    <!-- F1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-primary hover:shadow transition-all duration-300">
+                        <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-user-ninja"></i>
+                        </div>
+                        <h4 class="font-bold text-dark text-lg mb-2">Expert Operators</h4>
+                        <p class="text-slate-500 font-light text-xs leading-relaxed">
+                            Every team member is highly trained, experienced, and checked for safe handling of chemicals around households.
+                        </p>
+                    </div>
+
+                    <!-- F2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-primary hover:shadow transition-all duration-300">
+                        <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="font-bold text-dark text-lg mb-2">Government Approved</h4>
+                        <p class="text-slate-500 font-light text-xs leading-relaxed">
+                            We strictly deploy low-odor, organic, child-safe and pet-approved chemicals for eco-friendly safety.
+                        </p>
+                    </div>
+
+                    <!-- F3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-primary hover:shadow transition-all duration-300">
+                        <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h4 class="font-bold text-dark text-lg mb-2">Fast 24x7 Bookings</h4>
+                        <p class="text-slate-500 font-light text-xs leading-relaxed">
+                            Encountering an active bug emergency? Instantly book via Call or WhatsApp with rapid support dispatch.
+                        </p>
+                    </div>
+
+                    <!-- F4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-primary hover:shadow transition-all duration-300">
+                        <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h4 class="font-bold text-dark text-lg mb-2">Ironclad Warranty</h4>
+                        <p class="text-slate-500 font-light text-xs leading-relaxed">
+                            We stand strictly behind our work. If pests return during the warranty period, we retreat your home at absolutely no cost.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. Process / How It Works Section -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Protocol Steps</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Our Eradication Protocol</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+                <p class="text-slate-600 font-light text-base sm:text-lg">
+                    Four logical, highly deliberate steps ensuring continuous pest security.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                
+                <!-- Connector Arrow for large screens -->
+                <div class="hidden md:block absolute top-1/4 left-10 right-10 h-0.5 bg-dashed border-t border-dashed border-primary/25 z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 flex flex-col items-center text-center reveal">
+                    <div class="w-16 h-16 bg-primary text-accent rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg mb-6 hover:rotate-6 transition-transform">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-dark">Inspection</h3>
+                    <p class="text-slate-500 text-sm font-light max-w-xs">
+                        Deep visual scanning identifying pest nests, access points, and source vulnerabilities.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10 flex flex-col items-center text-center reveal">
+                    <div class="w-16 h-16 bg-accent text-primary rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg mb-6 hover:rotate-6 transition-transform">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-dark">Target Treatment</h3>
+                    <p class="text-slate-500 text-sm font-light max-w-xs">
+                        Deployment of highly targeted odorless sprays, baits, or chemical barriers for eradication.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10 flex flex-col items-center text-center reveal">
+                    <div class="w-16 h-16 bg-primary text-accent rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg mb-6 hover:rotate-6 transition-transform">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-dark">Exclusion Checks</h3>
+                    <p class="text-slate-500 text-sm font-light max-w-xs">
+                        Identifying and advising on crack sealing and entry point blockade to prevent recurrence.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative z-10 flex flex-col items-center text-center reveal">
+                    <div class="w-16 h-16 bg-accent text-primary rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg mb-6 hover:rotate-6 transition-transform">
+                        04
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-dark">Warranty Defense</h3>
+                    <p class="text-slate-500 text-sm font-light max-w-xs">
+                        Scheduled maintenance reviews and prompt emergency check-back if any pests reappear.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. Pricing Section -->
+    <section id="pricing" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Transparent Cost</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Affordable Defense Plans</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+                <p class="text-slate-600 font-light text-base sm:text-lg">
+                    Select a budget-friendly layout matching your household size and infestation level.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Package 1: Basic -->
+                <div class="bg-white rounded-3xl border border-slate-200 p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 reveal">
+                    <div>
+                        <span class="text-xs font-black uppercase tracking-widest text-slate-400">Single Treatment</span>
+                        <h3 class="text-2xl font-black text-dark mt-2">Basic Plan</h3>
+                        <p class="text-slate-400 font-light text-xs mt-1">Excellent for single target pest control.</p>
+                        <div class="my-8 flex items-baseline">
+                            <span class="text-5xl font-black text-primary">₹799</span>
+                            <span class="text-slate-400 text-sm ml-2">/ starting rate</span>
+                        </div>
+                        <ul class="space-y-4 border-t border-slate-100 pt-6">
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>Single Service Target</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>1 Detailed Site Visit</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>30-Day Complete Warranty</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>Odorless Gel/Spray Methods</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#contact" onclick="selectService('Cockroach Control')" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-dark font-bold py-3.5 rounded-full transition-colors">
+                            Book Basic Plan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 2: Standard -->
+                <div class="bg-white rounded-3xl border-2 border-primary p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative reveal">
+                    <span class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs px-4 py-1 rounded-full font-bold uppercase tracking-widest">Most Popular</span>
+                    <div>
+                        <span class="text-xs font-black uppercase tracking-widest text-primary">Combo Protection</span>
+                        <h3 class="text-2xl font-black text-dark mt-2">Standard Plan</h3>
+                        <p class="text-slate-400 font-light text-xs mt-1">Ideal for kitchen + bedroom pest protection.</p>
+                        <div class="my-8 flex items-baseline">
+                            <span class="text-5xl font-black text-primary">₹1,999</span>
+                            <span class="text-slate-400 text-sm ml-2">/ starting rate</span>
+                        </div>
+                        <ul class="space-y-4 border-t border-slate-100 pt-6">
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>2 Services Combo Combo</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>2 Dedicated Site Visits</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm font-bold text-primary">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>90-Day Structural Warranty</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>Full Kitchen & Cabinet Gel treatment</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#contact" onclick="selectService('General Pest Control (AMC)')" class="block w-full text-center bg-primary hover:bg-red-800 text-white font-bold py-3.5 rounded-full transition-colors shadow-md">
+                            Book Standard Plan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package 3: Premium AMC -->
+                <div class="bg-white rounded-3xl border border-slate-200 p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 reveal">
+                    <div>
+                        <span class="text-xs font-black uppercase tracking-widest text-slate-400">Year-Round Guard</span>
+                        <h3 class="text-2xl font-black text-dark mt-2">Premium / AMC</h3>
+                        <p class="text-slate-400 font-light text-xs mt-1">Perfect year-round security for your nested home.</p>
+                        <div class="my-8 flex items-baseline">
+                            <span class="text-5xl font-black text-primary">₹4,999</span>
+                            <span class="text-slate-400 text-sm ml-2">/ year</span>
+                        </div>
+                        <ul class="space-y-4 border-t border-slate-100 pt-6">
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>All Core Pest Services Covered</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>Scheduled Quarterly Visits (4/year)</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm font-bold">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>1-Year Complete Warranty Guard</span>
+                            </li>
+                            <li class="flex items-center space-x-3 text-slate-600 text-sm">
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+                                <span>Unlimited Free Callouts & Checkups</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#contact" onclick="selectService('General Pest Control (AMC)')" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-dark font-bold py-3.5 rounded-full transition-colors">
+                            Book Premium AMC
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. Gallery Section (Before / After & Image Grid) -->
+    <section id="gallery" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Defense Gallery</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Operations In Action</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+                <p class="text-slate-600 font-light text-base sm:text-lg">
+                    Witness how our professional team locks down home boundaries and eliminates structural threats.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Gallery 1 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-md reveal">
+                    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&q=80&w=600" alt="Termite damage analysis" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-1">Before & After</span>
+                        <h4 class="text-base font-bold">Termite Wood Infestation</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-md reveal">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600" alt="Technician at work spraying" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-1">In Action</span>
+                        <h4 class="text-base font-bold">Odorless Spray Spraying</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-md reveal">
+                    <img src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&q=80&w=600" alt="Pest control service van" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-1">Our Vehicle</span>
+                        <h4 class="text-base font-bold">Rapid Response Van</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 4 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-md reveal">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="Pest control team photo" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-1">Staff Core</span>
+                        <h4 class="text-base font-bold">SecureNest Team Photo</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. Testimonials Section (Carousel Slider) -->
+    <section class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Happy Clients</span>
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-4">Reviews From Safe Homes</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+            </div>
+
+            <!-- Custom Testimonial Container -->
+            <div class="relative max-w-4xl mx-auto reveal">
+                <div class="overflow-hidden rounded-3xl bg-white border border-slate-200 shadow-xl p-8 sm:p-12">
+                    
+                    <div class="flex transition-transform duration-500 ease-in-out" id="testimonial-container" style="transform: translateX(0%);">
+                        
+                        <!-- Testimonial 1 -->
+                        <div class="w-full flex-shrink-0 flex flex-col items-center text-center px-4">
+                            <div class="flex space-x-1 text-accent mb-6 text-xl">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="text-lg sm:text-xl text-slate-700 italic font-medium leading-relaxed max-w-2xl">
+                                "Very quick response, technician explained everything clearly. They solved my cockroach issue in just one visit!"
+                            </blockquote>
+                            <div class="mt-8 flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-extrabold text-lg shadow">
+                                    MS
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="font-bold text-dark text-base">Manoj Sawant</h4>
+                                    <span class="text-xs text-primary font-bold uppercase tracking-widest">Rajapur Resident</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="w-full flex-shrink-0 flex flex-col items-center text-center px-4">
+                            <div class="flex space-x-1 text-accent mb-6 text-xl">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="text-lg sm:text-xl text-slate-700 italic font-medium leading-relaxed max-w-2xl">
+                                "Termite issue solved completely, no return of pests so far. The standard pre-construction treatment is highly reliable."
+                            </blockquote>
+                            <div class="mt-8 flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-extrabold text-lg shadow">
+                                    RN
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="font-bold text-dark text-base">Rupali Naik</h4>
+                                    <span class="text-xs text-primary font-bold uppercase tracking-widest">Ratnagiri House owner</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="w-full flex-shrink-0 flex flex-col items-center text-center px-4">
+                            <div class="flex space-x-1 text-accent mb-6 text-xl">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="text-lg sm:text-xl text-slate-700 italic font-medium leading-relaxed max-w-2xl">
+                                "Affordable and effective, booked easily through WhatsApp. Their technician arrived on time and did a very clean job."
+                            </blockquote>
+                            <div class="mt-8 flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-extrabold text-lg shadow">
+                                    DG
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="font-bold text-dark text-base">Deepak Gurav</h4>
+                                    <span class="text-xs text-primary font-bold uppercase tracking-widest">Vijaydurg Business owner</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Custom Slider Control Dots -->
+                <div class="flex justify-center space-x-3 mt-8">
+                    <button class="w-3.5 h-3.5 rounded-full bg-primary transition-all duration-300" onclick="goToTestimonial(0)" id="dot-0" aria-label="Slide 1"></button>
+                    <button class="w-3.5 h-3.5 rounded-full bg-slate-300 transition-all duration-300" onclick="goToTestimonial(1)" id="dot-1" aria-label="Slide 2"></button>
+                    <button class="w-3.5 h-3.5 rounded-full bg-slate-300 transition-all duration-300" onclick="goToTestimonial(2)" id="dot-2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10. FAQ Section -->
+    <section id="faq" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Common Inquiries</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">Frequently Asked Questions</h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+            </div>
+
+            <!-- Accordion Grid -->
+            <div class="space-y-4 reveal">
+                
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-6 text-left font-bold text-lg text-dark bg-slate-50/50 hover:bg-slate-50 transition-colors focus:outline-none" onclick="toggleFaq(1)">
+                        <span>Is the treatment safe for children and pets?</span>
+                        <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="hidden p-6 border-t border-slate-200 text-slate-600 font-light text-sm leading-relaxed" id="faq-content-1">
+                        Yes, absolutely! We strictly use government-approved, low-odor, child and pet-safe chemicals. Our formulations are designed to be lethal to targeted insects while remaining safe for your beloved household family members.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-6 text-left font-bold text-lg text-dark bg-slate-50/50 hover:bg-slate-50 transition-colors focus:outline-none" onclick="toggleFaq(2)">
+                        <span>How long does the treatment last?</span>
+                        <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="hidden p-6 border-t border-slate-200 text-slate-600 font-light text-sm leading-relaxed" id="faq-content-2">
+                        Our treatments are highly durable. Standard chemical barriers last between 30 days and 1 year depending on the specific package and environmental conditions chosen. Standard plans offer 90 days of complete warranty, and Annual plans protect you year-round.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-6 text-left font-bold text-lg text-dark bg-slate-50/50 hover:bg-slate-50 transition-colors focus:outline-none" onclick="toggleFaq(3)">
+                        <span>Do you offer emergency same-day service?</span>
+                        <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="hidden p-6 border-t border-slate-200 text-slate-600 font-light text-sm leading-relaxed" id="faq-content-3">
+                        Yes, we do! We provide 24x7 emergency booking services. Rapid booking is available instantly via direct call or WhatsApp message redirect. Our closest local technician will be dispatched to secure your boundary.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 11. Contact + Lead Form Section -->
+    <section id="contact" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                
+                <!-- Info block (Left) -->
+                <div class="lg:col-span-5 flex flex-col justify-between reveal">
+                    <div>
+                        <span class="text-primary uppercase font-bold tracking-widest text-sm block mb-3">Defensive Dispatch</span>
+                        <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-4">Request SecureNest Defense</h2>
+                        <p class="text-slate-600 font-light text-sm sm:text-base leading-relaxed mb-8">
+                            Lock down your household boundaries from bugs. Fill in the form below and you will connect directly to our private technical coordinator via WhatsApp redirect.
+                        </p>
+
+                        <!-- Direct contact links -->
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm">Central Headquarters</h4>
+                                    <p class="text-slate-500 font-light text-sm">Shop No. 7, Anand Complex, Rajapur, Maharashtra 416702</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm">Direct Phone Link</h4>
+                                    <a href="tel:9527586194" class="text-primary font-bold text-sm hover:underline">+91 95275 86194</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm">Email Support</h4>
+                                    <a href="mailto:info@securenestpest.com" class="text-slate-600 font-light text-sm hover:underline">info@securenestpest.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map/Service Area Placeholder -->
+                    <div class="mt-12 rounded-2xl overflow-hidden border border-slate-200 h-48 bg-slate-200 relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="absolute inset-0 bg-primary/15 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center shadow animate-bounce mb-2">
+                                <i class="fa-solid fa-location-pin text-lg"></i>
+                            </div>
+                            <span class="text-xs font-black text-white bg-black/75 px-3 py-1 rounded-full uppercase tracking-wider">Rajapur • Ratnagiri • Vijaydurg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form block (Right) -->
+                <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-sm relative reveal">
+                    <h3 class="text-2xl font-black text-dark mb-2">Quick Booking Form</h3>
+                    <p class="text-xs text-slate-400 mb-6 uppercase tracking-wider font-semibold">Instant Priority Dispatch Queue</p>
+
+                    <form id="lead-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Name Field -->
+                            <div>
+                                <label for="form-name" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Your Name *</label>
+                                <input type="text" id="form-name" required placeholder="Enter Your Name" class="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white focus:outline-none rounded-xl py-3 px-4 text-sm text-dark transition-colors">
+                            </div>
+                            <!-- Phone Field -->
+                            <div>
+                                <label for="form-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Your Phone *</label>
+                                <input type="tel" id="form-phone" required placeholder="Enter Phone Number" class="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white focus:outline-none rounded-xl py-3 px-4 text-sm text-dark transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Address Area -->
+                            <div>
+                                <label for="form-address" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Service Locality/Address *</label>
+                                <input type="text" id="form-address" required placeholder="e.g. Anand Complex, Rajapur" class="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white focus:outline-none rounded-xl py-3 px-4 text-sm text-dark transition-colors">
+                            </div>
+                            <!-- Dropdown Service Needed -->
+                            <div>
+                                <label for="form-service" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Service Guard Needed *</label>
+                                <select id="form-service" required class="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white focus:outline-none rounded-xl py-3 px-4 text-sm text-dark transition-colors">
+                                    <option value="" disabled selected>Select Specific Service...</option>
+                                    <option value="Cockroach Control">Cockroach Control (Gel treatment)</option>
+                                    <option value="Termite Control">Termite Control (Barrier treatment)</option>
+                                    <option value="Mosquito Control">Mosquito Control (Fogging + Spray)</option>
+                                    <option value="Rodent Control">Rodent Control (Trap & Proofing)</option>
+                                    <option value="Bed Bug Treatment">Bed Bug Treatment (Heat combo)</option>
+                                    <option value="General Pest Control (AMC)">General Pest Control (AMC Plan)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Optional Message -->
+                        <div>
+                            <label for="form-message" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Additional Details (Optional)</label>
+                            <textarea id="form-message" rows="3" placeholder="Describe your active pest problem..." class="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white focus:outline-none rounded-xl py-3 px-4 text-sm text-dark transition-colors"></textarea>
+                        </div>
+
+                        <!-- Error Message Container -->
+                        <div id="form-error" class="hidden text-red-600 bg-red-50 border border-red-200 rounded-xl p-4 text-xs font-bold"></div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" class="w-full bg-primary hover:bg-red-800 text-white font-bold py-4 rounded-xl text-center uppercase tracking-wider btn-hover-effect flex items-center justify-center space-x-2 shadow-lg">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>I Want This Service</span>
+                            </button>
+                        </div>
+
+                        <p class="text-center text-[11px] text-slate-400">
+                            Clicking redirects your inquiry securely to WhatsApp (+91 95275 86194) with pre-filled message logs.
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 12. Footer Section -->
+    <footer class="bg-neutral-950 text-white pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+            
+            <!-- Footer Col 1: Brand -->
+            <div class="md:col-span-4 flex flex-col justify-between">
+                <div>
+                    <a href="#home" class="flex items-center space-x-2.5 mb-6 group">
+                        <div class="w-11 h-11 bg-primary rounded-xl flex items-center justify-center text-white shadow transition-transform group-hover:scale-105 duration-300 border border-white/10">
+                            <i class="fa-solid fa-house-shield text-2xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-black tracking-tight text-white leading-none">SecureNest</span>
+                            <span class="text-[10px] font-black tracking-widest text-accent leading-none uppercase mt-1">PEST CONTROL</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 font-light text-sm leading-relaxed mb-6">
+                        Guarding every corner of your home with professional, child and pet-safe pest management solutions since 7+ years.
+                    </p>
+                </div>
+                <!-- Social links -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-full bg-white/5 hover:bg-primary hover:text-accent flex items-center justify-center text-slate-300 transition-colors" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full bg-white/5 hover:bg-primary hover:text-accent flex items-center justify-center text-slate-300 transition-colors" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="w-8 h-8 rounded-full bg-white/5 hover:bg-primary hover:text-accent flex items-center justify-center text-slate-300 transition-colors" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Col 2: Quick Links -->
+            <div class="md:col-span-2">
+                <h4 class="text-sm font-black uppercase tracking-widest text-white mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-sm text-slate-400 font-light">
+                    <li><a href="#home" class="hover:text-accent transition-colors">Home Base</a></li>
+                    <li><a href="#services" class="hover:text-accent transition-colors">Service Programs</a></li>
+                    <li><a href="#why-choose-us" class="hover:text-accent transition-colors">Why Choose Us</a></li>
+                    <li><a href="#pricing" class="hover:text-accent transition-colors">Defense Costs</a></li>
+                    <li><a href="#gallery" class="hover:text-accent transition-colors">Operations Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 3: Service Areas -->
+            <div class="md:col-span-3">
+                <h4 class="text-sm font-black uppercase tracking-widest text-white mb-6">Service Area Coverage</h4>
+                <ul class="space-y-4 text-sm text-slate-400 font-light">
+                    <li><i class="fa-solid fa-location-arrow text-primary text-xs mr-2"></i> Rajapur (Central HQ)</li>
+                    <li><i class="fa-solid fa-location-arrow text-primary text-xs mr-2"></i> Ratnagiri Area</li>
+                    <li><i class="fa-solid fa-location-arrow text-primary text-xs mr-2"></i> Vijaydurg Estates</li>
+                    <li><i class="fa-solid fa-location-arrow text-primary text-xs mr-2"></i> Anand Complex Zone</li>
+                    <li><i class="fa-solid fa-location-arrow text-primary text-xs mr-2"></i> Surrounding Localities</li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 4: Dispatch Hours -->
+            <div class="md:col-span-3">
+                <h4 class="text-sm font-black uppercase tracking-widest text-white mb-6">Emergency Status</h4>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-sm text-slate-300">
+                    <span class="flex h-2.5 w-2.5 relative mb-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                    </span>
+                    <h5 class="font-bold text-white mb-1">Dispatch Core Online</h5>
+                    <p class="text-xs text-slate-400 leading-relaxed font-light mb-4">Our direct routing operators are active and scheduling emergency inspection crews. Call now.</p>
+                    <a href="tel:9527586194" class="font-black text-accent text-base block hover:underline">+91 95275 86194</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lower Footer Credits -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+            <p>&copy; 2026 SecureNest Pest Control. All Rights Reserved.</p>
+            <p class="mt-4 sm:mt-0 font-medium">Licensed Service Team • Shop No. 7, Anand Complex, Rajapur</p>
+        </div>
+    </footer>
+
+    <!-- Fixed/Floating WhatsApp Button -->
+    <a href="https://wa.me/9527586194?text=Hi,%20I%20need%20pest%20control%20service%20for%20[locality]" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl whatsapp-pulse hover:scale-110 transition-transform duration-300" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Sticky Header scroll shadow effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md', 'py-3');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('shadow-md', 'py-3');
+                header.classList.add('py-4');
+            }
+        });
+
+        // Toggle Mobile Menu Drawer
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const drawer = document.getElementById('mobile-drawer');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            drawer.classList.toggle('hidden');
+            if (drawer.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            }
+        });
+
+        // Close mobile drawer when clicking a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                drawer.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            });
+        });
+
+        // On Load Reveal Animation for Hero elements (Story Scroll trigger)
+        window.addEventListener('DOMContentLoaded', () => {
+            const heroReveals = document.querySelectorAll('.hero-reveal');
+            heroReveals.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('active');
+                }, index * 150); // Cascade animation sequence
+            });
+        });
+
+        // Scroll reveal trigger configuration
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            revealElements.forEach(elem => {
+                const rect = elem.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight * 0.85) {
+                    elem.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('DOMContentLoaded', revealOnScroll);
+
+        // Pre-select drop-down helper for Services
+        function selectService(serviceName) {
+            const selectEl = document.getElementById('form-service');
+            if (selectEl) {
+                selectEl.value = serviceName;
+            }
+        }
+
+        // Testimonial Slider logic
+        let currentSlide = 0;
+        const totalSlides = 3;
+        const container = document.getElementById('testimonial-container');
+
+        function goToTestimonial(index) {
+            currentSlide = index;
+            container.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Highlight relevant dot
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.getElementById(`dot-${i}`);
+                if (i === index) {
+                    dot.classList.add('bg-primary');
+                    dot.classList.remove('bg-slate-300');
+                } else {
+                    dot.classList.remove('bg-primary');
+                    dot.classList.add('bg-slate-300');
+                }
+            }
+        }
+
+        // Accordion (FAQ) toggler logic
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            const isHidden = content.classList.contains('hidden');
+            
+            // Hide all other FAQ items first
+            for (let i = 1; i <= 3; i++) {
+                const otherContent = document.getElementById(`faq-content-${i}`);
+                const otherIcon = document.getElementById(`faq-icon-${i}`);
+                if (otherContent) otherContent.classList.add('hidden');
+                if (otherIcon) otherIcon.classList.remove('rotate-180');
+            }
+
+            if (isHidden) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Contact Lead form WhatsApp Redirect Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            const address = document.getElementById('form-address').value.trim();
+            const service = document.getElementById('form-service').value;
+            const message = document.getElementById('form-message').value.trim();
+            const errorDiv = document.getElementById('form-error');
+
+            errorDiv.classList.add('hidden');
+            errorDiv.innerText = '';
+
+            // Basic Client-side Validations
+            if (!name || !phone || !address || !service) {
+                errorDiv.innerText = 'Error: Please fill in all required fields (*)';
+                errorDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Simple phone pattern check
+            const phonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+            if (!phonePattern.test(phone.replace(/[\s\(\)\-\+]/g, ''))) {
+                errorDiv.innerText = 'Error: Please enter a valid telephone number';
+                errorDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Build dynamic WhatsApp formatted message
+            const waNumber = '919527586194'; // Direct Business WhatsApp
+            let textMessage = `Hi, I want pest control service.\n\n`;
+            textMessage += `Name: ${name}\n`;
+            textMessage += `Address/Locality: ${address}\n`;
+            textMessage += `Service Needed: ${service}\n`;
+            textMessage += `Phone: ${phone}`;
+            
+            if (message) {
+                textMessage += `\n\nAdditional Details: ${message}`;
+            }
+
+            // Encode message for URL redirection
+            const encodedMessage = encodeURIComponent(textMessage);
+            const waUrl = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+
+            // Trigger safe WhatsApp redirection in new window/tab
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
